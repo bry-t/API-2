@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="cod-api.css">
+</head>
+
+<body>
+    <div class="container main-header">
+        <h1>Warzone Tracker</h1>
+        <h2>Search Recent Games and Stats</h2>
+    </div>
+    <form>
+        <div class="user">
+            <label for="username">Enter username: </label>
+            <input type="text" id="username">
+        </div>
+        <div class="select">
+            <select class="form-select" id="platform">
+                <option selected>Choose a Platform</option>
+                <option value="battle">BattleNet</option>
+                <option value="xbl">Xbox</option>
+                <option value="psn">PSN</option>
+            </select>
+            <input type="submit" value="Check Stats">
+        </div>
+    </form>
+    <div class="container" id="gameCards">
+        <!--JS Results-->
+    </div>
+    </div>
+    </body>
+
+    <script type="text/javascript" src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="cod-api.js"></script>
+</body>
+</html>
